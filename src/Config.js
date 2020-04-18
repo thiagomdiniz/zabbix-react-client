@@ -1,3 +1,3 @@
 export const ZABBIX_CONFIG = {
-    url: 'https://192.168.100.250/zabbix/api_jsonrpc.php'
+    url: process.env.REACT_APP_ZABBIX_URL
 }
