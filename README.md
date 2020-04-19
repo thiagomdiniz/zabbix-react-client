@@ -1,3 +1,22 @@
+A custom frontend for interaction with the Zabbix API, written in ReactJS.
+
+## Useful commands
+
+After clone this project, run `npm install` to install dependencies.
+
+To compile the app and build the docker image:
+
+`docker build -t zabbix-react-client .`
+
+If you choose to define the Zabbix URL using the docker build argument instead of using the .env files:
+
+`docker build --build-arg ZABBIX_URL_ARG=https://5.255.64.167/zabbix/api_jsonrpc.php -t zabbix-react-client .`
+
+To run the docker image:
+
+`docker run -it -d -p 80:80 --name=zbx-react-client zabbix-react-client`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
