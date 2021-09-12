@@ -10,7 +10,7 @@ To compile the app and build the docker image:
 
 If you choose to define the Zabbix URL using the docker build argument instead of using the .env files:
 
-`docker build --build-arg ZABBIX_URL_ARG=https://5.255.64.167/zabbix/api_jsonrpc.php -t zabbix-react-client .`
+`docker build --build-arg ZABBIX_URL_ARG=https://your.zabbix.address/zabbix/api_jsonrpc.php -t zabbix-react-client .`
 
 To run the docker image:
 
